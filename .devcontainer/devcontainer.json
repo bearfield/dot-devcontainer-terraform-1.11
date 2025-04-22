@@ -4,7 +4,8 @@
     "remoteUser": "kumano_ryo",
     "mounts": [
         "source=${localEnv:HOME}/devcontainer_conf/.gitconfig_linux,target=/home/kumano_ryo/.gitconfig,type=bind,consistency=cached",
-        "source=${localEnv:HOME}/.config/gcloud,target=/home/kumano_ryo/.config/gcloud,type=bind,consistency=cached"
+        "source=${localEnv:HOME}/.config/gcloud,target=/home/kumano_ryo/.config/gcloud,type=bind,consistency=cached",
+        "source=${localEnv:HOME}/.ssh,target=/home/kumano_ryo/.ssh,type=bind,consistency=cached"
     ],
     "features": {
         "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
@@ -47,11 +48,14 @@
                 "github.copilot",
                 "bmalehorn.vscode-fish",
                 "ms-vscode.makefile-tools",
-                "ms-azuretools.vscode-docker",
-                "oderwat.indent-rainbow",
+                "eamodio.gitlens",
                 "github.vscode-pull-request-github",
-                "hashicorp.terraform",
-                "aquasecurityofficial.trivy-vulnerability-scanner"
+                "ms-azuretools.vscode-docker",
+                "docker.docker",
+                "github.vscode-github-actions",
+                "github.copilot-chat",
+                "aquasecurityofficial.trivy-vulnerability-scanner",
+                "hashicorp.terraform"
             ]
         }
     }
